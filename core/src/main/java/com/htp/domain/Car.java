@@ -3,10 +3,11 @@ package com.htp.domain;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
-
+@Component(value = "myCar")
 public class Car {
     private Long id;
     String model;
@@ -15,6 +16,7 @@ public class Car {
     Engine engine;
 
     public Car() {
+        this.model = "Volvo";
     }
 
     public Car(Long id, String model) {

@@ -3,10 +3,21 @@ package com.htp.domain;
 public class Client {
     String id;
     String fullName;
+    String greeting;
+
+    public void setGreeting(String greeting) {
+        this.greeting = greeting;
+    }
 
     public Client(String id, String fullName) {
         this.id = id;
         this.fullName = fullName;
+    }
+
+    public Client(String id, String fullName, String greeting) {
+        this.id = id;
+        this.fullName = fullName;
+        this.greeting = greeting;
     }
 
     public Client() {
